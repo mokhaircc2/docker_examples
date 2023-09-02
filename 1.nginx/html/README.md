@@ -29,4 +29,4 @@ this command runs in detached mode and interactive terminal (-d, -i, -t flags us
 
 Type docker inspect "image ID", which will give info about volume mapping. This shows any folder which is on local computer can be read/write by the container. So any processes which takes place within the container in terms of write, will also write to the local folder on the computer.
 
-If you go to web browser, type localhost:8888, you should see a custom nginx web page open
+If you go to web browser, type localhost:8888, you should see a welcome to custom nginx web page, as code written in the index.html file.
