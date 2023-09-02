@@ -35,3 +35,11 @@ If you want to run another container, then run the same command as previous, but
 If you run a container with a database and insert some records in it then it is stored in the container. If the container is stoped then all data is lost. So if you create another container with the same image, database, you will not have any data from the prvious container, it will be empty.
 
 Anotherway to map volume to the application (nginx) is to have both vol and app inside the container. This allows the data within the volume to persist
+
+Make sure to stop and delete all containers and image
+
+docker ps -a -q - gives you lists of all container ID
+
+docker stop $(docker ps -a -q) - stops all containers
+
+docker rm $(docker ps -a -q) - deletes all containers
