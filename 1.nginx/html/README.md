@@ -1,4 +1,4 @@
-NGINX is open-source web server software. In this project I initialised nginx using docker. If you follow this tutorial make sure you have docker desktop on your local computer. I used visual studio code to run the commands.
+**NGINX** is open-source web server software. In this project I initialised nginx using docker. If you follow this tutorial make sure you have docker desktop on your local computer. I used visual studio code to run the commands.
 
 Pull the offical image nginx from Docker Hub by running the following command:
 docker run -d nginx
@@ -18,3 +18,15 @@ To make connection to the nginx container do the following: go to web browser, t
 
 Stop the container type: docker stop "container id/name
 Remove the container: docker rm "container id/name"
+
+
+**Enabling Volumes mapping for nginx container**
+Using visual studio code, cd into 1.nginx folder, then run the following command:
+
+docker run -dit -p 8888:80 -v ${PWD}/html:/user/share/nginx/html nginx
+
+this command runs in detached mode and interactive terminal (-d, -i, -t flags used), with host port 88888 and conatiner port 80 which is open by default from nginx, mapping -v (volume) to the directory pathway (i.e specify the folder within the container), using the nginx image
+
+Type docker inspect "image ID", which will give info about volume mapping. This shows any folder which is on local computer can be read/write by the container. So any processes which takes place within the container in terms of write, will also write to the local folder on the computer.
+
+If you go to web browser, type localhost:8888, you should see a custom nginx web page open
