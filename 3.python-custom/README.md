@@ -4,7 +4,7 @@ Make sure your in the 3.python-custom folder using the visual studio code to run
 
 Run the following command:
 
-docker build . -t python-custom (here instruction from docker file is requesting to use python:alpine image which is pulled from docker hub. Next the docker file specified a working directory called app
+docker build . -t python-custom (here instruction from docker file is requesting to use python:alpine image which is pulled from docker hub. Next the docker file specified a working directory called /app. Next pip is installed inside pymongo i.e all dependencies. Next all application files from local folder on my computer is copied into ./app file inside the container)
 
 docker run -it python-custom sh
 once inside the container you can type ls to see that the dokerfile and main.py file are listed. Exit the shell then the container, control c, then type exit
