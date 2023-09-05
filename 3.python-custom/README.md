@@ -25,6 +25,6 @@ Now type docker network list, and you will see the newly created network, python
 Now attach the custom bridge network to the running container (mongo container is the running container):
 docker network connect python-mongo mongo
 
-Now run the python-custom container and hence the python application:
+Now run the python-custom container which will run the python application:
 docker run -it --network=python-mongo python-custom
 after this is executed you will see an output, which is a list of databases from mongodb and then the python container will be exited because running of python application was successful.
