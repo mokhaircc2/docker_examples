@@ -1,0 +1,1 @@
+In this project I will be using docker compose to build python app image and using mongodb from the dockerhub. This project is almost the same as the previous 4.python-custom, but the difference is that docker compose automatically creates network bridges for the containers running and creates images and runs containers all according to what is specified in the docker file.
