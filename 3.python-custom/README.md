@@ -4,7 +4,7 @@ Make sure your in the 3.python-custom folder using the visual studio code to run
 
 Run the following command:
 
-docker build . -t python-custom (here instruction from docker file is requesting to use python:alpine image which is pulled from docker hub. Next the docker file specified a working directory called /app. Next pip is installed inside pymongo i.e all dependencies. Next all application files from local folder on my computer is copied into ./app file inside the container). So on top of the base image (python:alpine) the build process adds 3 addition files system layers i.e workdir, run pip and copy . app. Now run the build:
+docker build . -t python-custom (here instruction from docker file is requesting to use python:alpine image which is pulled from docker hub, -t flag is to tag the image and call it in this case python-custom). Next the docker file specified a working directory called /app. Next pip is installed inside pymongo i.e all dependencies. Next all application files from local folder on my computer is copied into ./app file inside the container). So on top of the base image (python:alpine) the build process adds 3 addition files system layers i.e workdir, run pip and copy . app. Now run the build:
 
 docker run -it python-custom (this command times out and wont run the container, because the python application is not able to resolve the mongo name to its ip address)
 
