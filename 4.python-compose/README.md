@@ -7,4 +7,10 @@ To run the docker compose file type:
 
 **docker compose up**
 
-this causes to build the app service (i.e custom python-image) and also use the mongodb image from dockerhub and to create containers from this as well as custom netowrk bridge and run the application. Once the application is run and executed it will stop the container, in this case python-compose_app will stop running and python-compose-mongo will still be running. You can view the logs and see the output as list of databases as was specified in the main.py file
+this causes to build the app service (i.e custom python-image) and also use the mongodb image from dockerhub and to create containers from this as well as custom netowrk bridge and run the application. Once the application is run and executed it will stop the container running the process, in this case python-compose_app will stop running and python-compose-mongo will still be running. You can view the logs and see the output as list of databases as was specified in the main.py file.
+
+To view which containers are running type
+
+**docker ps -a**
+
+**docker compose down **, will stop and remove all running containers and custom network
