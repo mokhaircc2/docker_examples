@@ -5,3 +5,7 @@ services:
     build: ./app
   mongo:
     image: mongo
+    ports:
+      -27017:27017
+
+# ports mapping is used to enable the application to connect to the volume and where the data persist, so if a container stops running and a new container is started then it will connect to the volume and have access to the data otherwise without ports mapping the data is lost when you stop conatiner running
