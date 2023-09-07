@@ -13,4 +13,4 @@ To view which containers are running type
 
 **docker ps -a**
 
-**docker compose down **, will stop and remove all running containers and custom network
+**docker compose down**, will stop and remove all running containers and custom network
