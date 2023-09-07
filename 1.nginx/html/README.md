@@ -3,9 +3,9 @@
 Pull the offical image nginx from Docker Hub by running the following command:
 docker run -d nginx
 
-If you type: docker images, you should have the latest image downloaded
-To stop the container type: docker stop "container id/name"
-To remove the container: docker rm "container id/name"
+If you type: docker images, you should have the latest image downloaded.
+To stop the container type: docker stop "container id/name".
+To remove the container: docker rm "container id/name".
 
 
 Port mapping is used to access the services running inside a Docker container. I opened a host port to give access to a corresponding open port inside the Docker container. Then all the requests that are made to the host port can be redirected into the Docker container
