@@ -1,4 +1,4 @@
-In this project we have a small python code on our local computer and want to run it with docker conatiner.
+In this project I created a python code which is located on local computer. To run the code it has to be  and want to run it with docker conatiner. So to run the code I used python:alpine
 
 Make sure you CD in 2.python-app folder then run the command using visual studio code.
 
