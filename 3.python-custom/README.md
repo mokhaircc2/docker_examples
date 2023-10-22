@@ -20,7 +20,7 @@ Type **docker network list**, and you will see 3 networks - bridge, host and nul
 Now to create custom bridge network do as follows:
 
 **docker network create "name of network"**, e.g "python-mongo".
-Now type **docker network list**, and you will see the newly created network, python-mongo. Docker runs internal DNS server which resolves names and IDs f the containers to their ip addresses.
+Now type **docker network list**, and you will see the newly created network, python-mongo. Docker runs internal DNS server which resolves names and IDs for the containers to their ip addresses.
 
 Now attach the custom bridge network to the running container (mongo container is the running container):
 **docker network connect python-mongo mongo**
