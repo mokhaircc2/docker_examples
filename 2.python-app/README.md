@@ -1,4 +1,4 @@
-In this project I created a python code which is located on my local computer. The code asks to insert any positive integers, and sums all the integers from 0 to the given number, and gives you the outcome. To run this code a custom (python app) image was built on top of a python base image called Alpine.
+In this project I created a python code which is located on my local computer. The code asks to insert any positive integers, and sums all the integers from 0 to the given number, and gives you the outcome. To run this code a custom image (python app) was built on top of a python base image called Alpine.
 
 Make sure you CD in 2.python-app folder then run the command using visual studio code.
 
