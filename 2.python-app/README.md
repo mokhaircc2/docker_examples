@@ -6,7 +6,7 @@ Pull the latest python Alpine image from docker hub, **docker run -d python:alpi
 
 **docker run -it -v ${PWD}:/app python:alpine python /app/main.py**
 
-This command creates an image based on python:alpine, maping the volume to 2.python-app folder. Once the python code has been run then the container is exited. 
+This command creates an image based on python:alpine, maping the volume to 2.python-app folder. The program will ask you to enter a positive number and calculate the sum of all the integers to that number and then finally exit when the python code has been successfully run. 
 
 Dont forget to stop and remove the container and image after the task is completed
 
