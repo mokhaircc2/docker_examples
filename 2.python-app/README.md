@@ -2,7 +2,7 @@ In this project I created a python code which is located on my local computer. T
 
 Make sure you CD in 2.python-app folder then run the command using visual studio code.
 
-Pull the latest python Alpine image from docker hub. Then you can map the local python file as volume mapping to the container. The command as follows:
+Pull the latest python Alpine image from docker hub. Then you can map the local python file as volume mapping to the container. The command is as follows:
 
 **docker run -it -v ${PWD}:/app python:alpine python /app/main.py**
 
