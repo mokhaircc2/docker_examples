@@ -23,7 +23,7 @@ Remove the container: **docker rm "container id/name"**.
 **Enabling Volumes mapping for nginx container**
 Using visual studio code, cd into 1.nginx folder, then run the following command:
 
-**docker run -dit -p 8888:80 -v ${PWD}/html:/user/share/nginx/html nginx**.
+**docker run -dit -p 8888:80 -v ${PWD}/html:/usr/share/nginx/html nginx**.
 
 This command runs in detached mode and interactive terminal (-d, -i, -t flags used), with host port 88888 and conatiner port 80 which is open by default from nginx, mapping -v (volume) to the directory pathway (i.e specify the folder within the container), using the nginx image.
 
