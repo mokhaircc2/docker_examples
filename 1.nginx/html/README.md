@@ -23,13 +23,13 @@ Remove the container: **docker rm "container id/name"**.
 **Enabling Volumes mapping for nginx container**
 Using visual studio code, cd into 1.nginx folder, then run the following command:
 
-docker run -dit -p 8888:80 -v ${PWD}/html:/user/share/nginx/html nginx.
+**docker run -dit -p 8888:80 -v ${PWD}/html:/user/share/nginx/html nginx**.
 
 This command runs in detached mode and interactive terminal (-d, -i, -t flags used), with host port 88888 and conatiner port 80 which is open by default from nginx, mapping -v (volume) to the directory pathway (i.e specify the folder within the container), using the nginx image.
 
-Type docker inspect "image ID", which will give info about volume mapping. This shows any folder which is on local computer can be read/write by the container. So any processes which takes place within the container in terms of write, will also write to the local folder on the computer.
+Type **docker inspect "image ID"**, which will give info about volume mapping. This shows any folder which is on local computer can be read/write by the container. So any processes which takes place within the container in terms of write, will also write to the local folder on the computer.
 
-If you go to web browser, type localhost:8888, you should see a Welcome to custom NGINX web page as was written in the index.html file. If you modify the index.html file to "update custom NGINX web page", the change is immediate, refresh web page and see chnage.
+If you go to web browser, type **localhost:8888**, you should see a Welcome to custom NGINX web page as was written in the index.html file. If you modify the index.html file to "update custom NGINX web page", the change is immediate, refresh web page and see chnage.
 
 If you want to run another container, then run the same command as previous, but this time change local host port to say 8889 and everything else the same. Now you will have two containers running and mapped to the same volume. 
 If you run a container with a database and insert some records in it then it is stored in the container. If the container is stoped then all data is lost. So if you create another container with the same image, database, you will not have any data from the prvious container, it will be empty.
@@ -38,8 +38,8 @@ Anotherway to map volume to the application (nginx) is to have both vol and app 
 
 Make sure to stop and delete all containers and image
 
-docker ps -a -q - gives you lists of all container ID
+**docker ps -a -q** - gives you lists of all container ID
 
-docker stop $(docker ps -a -q) - stops all containers
+**docker stop $(docker ps -a -q)** - stops all containers
 
-docker rm $(docker ps -a -q) - deletes all containers
+**docker rm $(docker ps -a -q)** - deletes all containers
