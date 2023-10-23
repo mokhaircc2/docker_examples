@@ -1,7 +1,7 @@
 **NGINX** is open-source web server software. In this project I initialised nginx using docker. If you follow this tutorial make sure you have docker desktop on your local computer. I used visual studio code to run the commands.
 
 Pull the offical image nginx from Docker Hub by running the following command:
-docker run -d nginx
+**docker run -d nginx**
 
 If you type: **docker images**, you should have the latest image downloaded.
 To stop the container type: **docker stop "container id/name"**.
