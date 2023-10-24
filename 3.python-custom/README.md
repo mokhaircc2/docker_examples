@@ -32,5 +32,7 @@ Once the python container runs the application the output is to list data from t
 Delete all running containers, and images and also remove the custom network. 
 
 **docker rm "container name/ID"**
+
 **docker rmi "image name/ID"**
+
 **docker network remove "name of network"**
