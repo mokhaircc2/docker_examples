@@ -5,14 +5,14 @@ services:
     build: ./app
   mongo:
     image: mongo
-    ports:
-      - 27017:27017
-    volumes:
-      - mongo_data:/data/db
+#     ports:
+#       - 27017:27017
+#     volumes:
+#       - mongo_data:/data/db
 
-# ports mapping is used to enable the application to connect to the volume and where the data persist, so if a container stops running and a new container is started then it will connect to the volume and have access to the data otherwise without ports mapping the data is lost when you stop conatiner running. Also mention the volume which will be used
+# # ports mapping is used to enable the application to connect to the volume and where the data persist, so if a container stops running and a new container is started then it will connect to the volume and have access to the data otherwise without ports mapping the data is lost when you stop conatiner running. Also mention the volume which will be used
 
-Volumes:
-  mongo_data:
+# Volumes:
+#   mongo_data:
 
-# specify the name (e.g mongo_data) for the volume which will be created on docker host, in my case its the linux virtual machine running on my mac and the /data/db is the pathway in the container where the volume will be mounted on. This is where mongodb will store its data.
+# # specify the name (e.g mongo_data) for the volume which will be created on docker host, in my case its the linux virtual machine running on my mac and the /data/db is the pathway in the container where the volume will be mounted on. This is where mongodb will store its data.
