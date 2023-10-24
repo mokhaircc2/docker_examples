@@ -2,7 +2,7 @@ Running WordPress websites can involve using a wide number of configurations and
 
 Once you install Docker Engine and Compose installed, you can get started on your first WordPress development project. You’ll need to create a new, empty project directory using the ‘make directory’ command:
 
-mkdir wordpress/
+**mkdir wordpress/**
 
 Next, you can move over to your new directory using the following command: 
 
