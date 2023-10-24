@@ -10,7 +10,7 @@ Next, you can move over to your new directory using the following command:
 
 You’ll now be in your new project directory.
 
-Now use the docker-compose.yaml file. This will create your new WordPress installation and the necessary MySQL database. Your file will contain all of the information for both WordPress and your database, including necessary ports, databases, hostnames, and passwords.
+Now use the **docker-compose.yaml** file. This will create your new WordPress installation and the necessary MySQL database. Your file will contain all of the information for both WordPress and your database, including necessary ports, databases, hostnames, and passwords.
 
 Now that you’ve configured the YAML file, you’ll need to execute the command that will pull in all the required images and set up your WordPress project. From within your project directory, you’ll run the following command: 
 
