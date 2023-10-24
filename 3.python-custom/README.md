@@ -11,7 +11,7 @@ Run the following command:
 **docker run -it python-custom sh**
 once inside the container you can type ls to see that the dokerfile and main.py file are listed. Exit the shell then the container, control c, then type exit.
 
-Now type **docker run -d --name mongo mongo**, to runs mongo container from the image mongo. After mongodb is running, re-try running the python-custom container:
+Now type **docker run -d --name=mongo mongo**, to runs mongo container from the image mongo. After mongodb is running, re-try running the python-custom container:
 **docker run -it python-custom**
 
 The container times out again, because the python application is not able to resolve the mongo name to its ip address - you have to create a network bridge between the two containers. However the two containers can communicate with each other using their ip addresses, but not names).
