@@ -6,7 +6,7 @@ Once you install Docker Engine and Compose installed, you can get started on you
 
 Next, you can move over to your new directory using the following command: 
 
-cd wordpress/
+**cd wordpress/**
 
 You’ll now be in your new project directory.
 
@@ -14,7 +14,7 @@ Now use the docker-compose.yaml file. This will create your new WordPress instal
 
 Now that you’ve configured the YAML file, you’ll need to execute the command that will pull in all the required images and set up your WordPress project. From within your project directory, you’ll run the following command: 
 
-docker-compose up -d
+**docker-compose up -d**
 
 You should now see that Docker is ‘pulling’ in the MySQL and WordPress images. 
 
@@ -22,7 +22,7 @@ To access the wordpress installation:
 
 Because you’re installing this site locally, you’ll need to use the port indicated in your YAML file rather than the typical WordPress /install.php script. Since we’re using Docker Desktop for Mac in our example, we’ll use https://localhost as the IP address and open port https://localhost:8080. This was the port designated in the YAML file. You can access WordPress in a browser to complete the standard installation steps.
 
-It’s recommended that you ‘shut down and clean up’ once you’ve completed the installation as well. To do this, you can use the Docker ‘down’ command. This will stop and remove the containers, but preserves the WordPress database.
+It’s recommended that you ‘shut down and clean up’ once you’ve completed the installation as well. To do this, you can use the **docker compose down** command. This will stop and remove the containers, but preserves the WordPress database.
 
 
 Using WordPress and Docker for Streamlined Deployment to Production:
