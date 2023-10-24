@@ -22,6 +22,8 @@ To access the wordpress installation:
 
 Because you’re installing this site locally, you’ll need to use the port indicated in your YAML file rather than the typical WordPress /install.php script. Since we’re using Docker Desktop for Mac in our example, we’ll use https://localhost as the IP address and open port https://localhost:8080. This was the port designated in the YAML file. You can access WordPress in a browser to complete the standard installation steps.
 
+Access your wordpress installation with **http://localhost:8080/wp-admin/install.php**
+
 It’s recommended that you ‘shut down and clean up’ once you’ve completed the installation as well. To do this use the followng command:
 
 **docker compose down** 
