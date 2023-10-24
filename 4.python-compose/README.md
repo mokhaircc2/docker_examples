@@ -13,4 +13,8 @@ To view which containers are running type
 
 **docker ps -a**
 
+Checck the custom network bridge is created **docker network list**
+
+press control c on terminal to stop both container
+
 **docker compose down**, will stop and remove all running containers and custom network
