@@ -1,4 +1,20 @@
-**NGINX** is open-source web server software. In this project I initialised nginx using docker. If you follow this tutorial make sure you have docker desktop on your local computer. I used visual studio code to run the commands.
+The Docker Advantage-</b>
+Docker allows you to install and run software irrespective of the installed dependencies and the operating system in use. This means your application can seamlessly run on any operating system without the headache of handling dependencies. No more trial and error, no more debugging — Docker simplifies the entire process.-</b>
+
+Docker is a tool that enables you to install and run software effortlessly by abstracting away the complexities of dependencies and operating systems.-</b>
+
+
+To run an application with Docker, you start by creating a **Docker file**. This file contains all the instructions necessary to install and run your application. It encapsulates the requirements, making the process reproducible and scalable.-</b>
+
+**Building Docker Images**-</b>
+Once the Docker file is ready, you build a Docker image. Think of the image as a compiled version of your application, complete with all the dependencies specified in the Docker file.-</b>
+
+To execute your application with Docker, you use the simple **Docker run** command, specifying the image name and version tag. This results in the creation of a Docker container, a lightweight, isolated environment where your application runs seamlessly.-</b>
+
+
+
+
+**NGINX** is open-source web server software. In this project I initialised nginx using docker. If you follow this tutorial make sure you have docker desktop on your local computer. I used visual studio code to run the commands.-</b>
 
 Pull the offical image nginx from Docker Hub by running the following command:
 **docker run -d nginx**
