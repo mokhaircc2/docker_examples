@@ -22,7 +22,7 @@ To view which containers are running type
 
 **docker ps -a**
 
-Checck the custom network bridge is created **docker network list**
+Check the custom network bridge is created **docker network list**
 
 press control c on terminal to stop both container
 
