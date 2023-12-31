@@ -1,5 +1,4 @@
-The Docker Advantage-</b>
-Docker allows you to install and run software irrespective of the installed dependencies and the operating system in use. This means your application can seamlessly run on any operating system without the headache of handling dependencies. No more trial and error, no more debugging — Docker simplifies the entire process.-</b>
+**Docker** allows you to install and run software irrespective of the installed dependencies and the operating system in use. This means your application can seamlessly run on any operating system without the headache of handling dependencies. No more trial and error, no more debugging — Docker simplifies the entire process.-</b>
 
 Docker is a tool that enables you to install and run software effortlessly by abstracting away the complexities of dependencies and operating systems.-</b>
 
