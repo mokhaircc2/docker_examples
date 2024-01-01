@@ -6,3 +6,23 @@ Docker images are portable and easily reproducuable and shared by several develo
 
 
 Create new folder in Visual studio code and have a dockerfile
+
+
+Dockerfile codes
+
+FROM ubuntu:latest
+
+#install apcache webserver on the ubuntu base image, the run command executes a shell command inside the docker container during the build process, in this case it updates the package list and installs apache2 package
+RUN apt-get update && apt-get install -y apache2
+
+#The Docker container will listen on port 80, which is the default port for apache webserver
+EXPOSE 80
+
+#This command specifies the docker container to start with the apachectl command and running in the foreground and allows the container to run as a main process and the container keeps running until manually stopped/terminated.
+CMD ["apache2ctl", "-D", "FOREGROUND"]
+
+On the terminal run the docker build -t my-apache-image . command and enter
+
+Next run the docker container, docker run -p 80:80 my-apache-image
+
+This will now start a new container. Verify the Apache webserver by going to the web browser and going to the localhost. Type localhost on browser and you will see  Apache2 default page runing on Ubuntu
