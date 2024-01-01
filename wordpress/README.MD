@@ -22,7 +22,8 @@ You should now see that Docker is ‘pulling’ in the MySQL and WordPress image
 
 To access the wordpress installation:</b>
 
-Because you’re installing this site locally, you’ll need to use the port indicated in your YAML file rather than the typical WordPress /install.php script. Since we’re using Docker Desktop for Mac in our example, we’ll use https://localhost as the IP address and open port https://localhost:8080. This was the port designated in the YAML file. You can access WordPress in a browser to complete the standard installation steps.
+Since we want wordpress to be accessible outside of the container, we open port-mapping from 8080 on our host to port 80 of the container by defining it in ports field.
+Because you’re installing this site locally, you’ll need to use the port indicated in your YAML file rather than the typical WordPress /install.php script. Use https://localhost:8080. You can access WordPress in a browser to complete the standard installation steps.
 
 Access your wordpress installation with **http://localhost:8080/wp-admin/install.php**
 
