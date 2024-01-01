@@ -1,0 +1,8 @@
+In this project we are going to dockerise an Apache webserver using 
+
+This allows isolation as docker containers provide an isolated environment for running Apache ensuring that its not impacted by any changes to the host system or other applocations running on the same machine.
+Secondley there is consistancy with packaging the Apache webserver and its dependencies in the docker container where developers can ensure the app runs consitently across different environment such as development, staging and production.
+Docker images are portable and easily reproducuable and shared by several developlers. Docker containers can easily be scaled horizontally to handle increased traffic by deploying multiple instances for the same container
+
+
+Create new folder in Visual studio code and have a dockerfile
