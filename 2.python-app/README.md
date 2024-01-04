@@ -10,5 +10,5 @@ This command creates an image based on python:alpine, maping the volume to 2.pyt
 
 Dont forget to stop and remove the container and image after the task is completed
 
-**docker stop "name of container**
-**docker rm "name of image**
+**docker stop "name of containe"r**
+**docker rm "name of image"**
