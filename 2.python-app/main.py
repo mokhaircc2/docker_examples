@@ -8,4 +8,4 @@ else:
     while i > 0:
         sum += i
         i -= 1
-    print("Sum of all positive numbers,", n, "is", sum)
+    print("The sum of all numbers between 0 and", n, "is", sum)
